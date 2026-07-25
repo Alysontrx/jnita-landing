@@ -555,7 +555,8 @@ ul {
     border: 1px solid var(--border-color);
     transition: var(--transition);
     position: relative;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .history-card:hover {
@@ -584,6 +585,10 @@ ul {
 .history-info {
     padding: 25px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 250px); /* Fill remaining height minus image height */
+    align-items: flex-start;
 }
 
 .step-badge {
@@ -614,6 +619,20 @@ ul {
     color: var(--text-light);
     font-size: 15px;
     line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.history-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background: rgba(0, 76, 151, 0.05); /* very light blue */
+    color: var(--primary-blue);
+    border-radius: var(--radius-full);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: auto;
 }
 
 /* Categories Section */
