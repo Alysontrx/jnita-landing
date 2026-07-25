@@ -544,11 +544,20 @@ ul {
     background-color: var(--bg-alt);
 }
 
+.history-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.history-header .section-title {
+    justify-content: center;
+}
+
 .history-description {
     font-size: 17px;
     color: var(--text-light);
     max-width: 600px;
-    margin-bottom: 50px;
+    margin: 0 auto;
 }
 
 .history-grid {
