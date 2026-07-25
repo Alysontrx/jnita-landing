@@ -545,14 +545,15 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    position: relative;
 }
 
 .history-card {
     background: var(--white);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 76, 151, 0.08);
+    border: 1px solid rgba(0, 76, 151, 0.05);
     transition: var(--transition);
     position: relative;
     display: flex;
@@ -560,79 +561,94 @@ ul {
 }
 
 .history-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-blue);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 76, 151, 0.15);
+    border-color: rgba(0, 76, 151, 0.1);
 }
 
 .history-img-wrapper {
     width: 100%;
     height: 250px;
     overflow: hidden;
+    position: relative;
+}
+
+.history-img-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+    pointer-events: none;
 }
 
 .history-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .history-card:hover .history-img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .history-info {
-    padding: 25px;
+    padding: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
-    height: calc(100% - 250px); /* Fill remaining height minus image height */
+    height: calc(100% - 250px);
     align-items: flex-start;
 }
 
 .step-badge {
     position: absolute;
-    top: -20px;
-    right: 25px;
-    background: var(--secondary-yellow);
-    color: var(--primary-blue-dark);
+    top: -25px;
+    right: 30px;
+    background: linear-gradient(135deg, var(--secondary-yellow), var(--secondary-yellow-dark));
+    color: var(--white);
     font-weight: 800;
     font-size: 20px;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(249, 168, 38, 0.4);
     border: 3px solid var(--white);
+    z-index: 10;
 }
 
 .history-info h3 {
-    color: var(--primary-blue);
-    font-size: 20px;
+    color: var(--primary-blue-dark);
+    font-size: 22px;
+    font-weight: 800;
     margin-bottom: 12px;
 }
 
 .history-info p {
     color: var(--text-light);
     font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    line-height: 1.7;
+    margin-bottom: 25px;
 }
 
 .history-date {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 15px;
-    background: rgba(0, 76, 151, 0.05); /* very light blue */
-    color: var(--primary-blue);
+    padding: 8px 18px;
+    background: linear-gradient(135deg, rgba(0, 76, 151, 0.05), rgba(0, 76, 151, 0.1));
+    color: var(--primary-blue-dark);
     border-radius: var(--radius-full);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: auto;
+    border: 1px solid rgba(0, 76, 151, 0.1);
 }
 
 /* Categories Section */
