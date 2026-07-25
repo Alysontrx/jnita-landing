@@ -10,6 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollY = window.scrollY;
         if (!ticking) {
             window.requestAnimationFrame(() => {
+                if (window.innerWidth <= 768) {
+                    // Disable sticky behavior on mobile and clear inline styles
+                    headerNav.style.position = '';
+                    headerNav.style.top = '';
+                    headerNav.style.left = '';
+                    headerNav.style.right = '';
+                    headerNav.style.boxShadow = '';
+                    headerNav.style.zIndex = '';
+                    document.body.style.paddingTop = '';
+                    ticking = false;
+                    return;
+                }
+
                 if (lastScrollY > headerTopHeight) {
                     headerNav.style.position = 'fixed';
                     headerNav.style.top = '0';
