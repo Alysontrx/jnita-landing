@@ -1491,18 +1491,30 @@ body.no-scroll {
     }
 
     /* Testimonials scaling */
+    .testimonials-section {
+        overflow: hidden; /* Force clipping on mobile */
+    }
+
     .google-rating {
         width: 100%;
+        flex-direction: column;
         justify-content: center;
+        text-align: center;
+        gap: 5px;
+        padding: 15px 10px;
+    }
+
+    .rating-number {
+        font-size: 32px;
     }
 
     .review-card {
-        min-width: 280px;
+        min-width: 260px;
         padding: 20px;
     }
 
     .review-cta {
-        padding: 25px 20px;
+        padding: 25px 15px;
         margin-top: 30px;
     }
 
@@ -1515,11 +1527,15 @@ body.no-scroll {
     }
 
     .review-cta-btn {
-        padding: 12px 20px;
+        padding: 12px 15px;
         font-size: 14px;
         flex-direction: column;
         text-align: center;
         gap: 8px;
+        width: 100%;
+        max-width: 100%;
+        white-space: normal;
+        box-sizing: border-box;
     }
 
     /* Relique section text card spacing */
