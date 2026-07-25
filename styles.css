@@ -555,11 +555,10 @@ ul {
 
 .history-description {
     font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
+    color: var(--text-dark);
     line-height: 1.8;
-    color: var(--text-light);
-    max-width: 650px;
+    font-weight: 500;
+    max-width: 800px;
     margin: 0 auto;
 }
 
