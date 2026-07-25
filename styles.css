@@ -38,6 +38,11 @@
     box-sizing: border-box;
 }
 
+img, svg, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 120px;
@@ -69,6 +74,7 @@ ul {
 
 .container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }

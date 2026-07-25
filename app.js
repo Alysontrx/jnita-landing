@@ -154,39 +154,4 @@ document.addEventListener('DOMContentLoaded', () => {
         // Auto slide every 5 seconds
         setInterval(moveToNextSlide, 5000);
     }
-
-    // Reviews Carousel
-    const reviewsTrack = document.getElementById('reviews-track');
-    if (reviewsTrack) {
-        let scrollPos = 0;
-        let isPaused = false;
-        
-        // Clone cards for infinite loop
-        const cards = Array.from(reviewsTrack.children);
-        cards.forEach(card => {
-            const clone = card.cloneNode(true);
-            reviewsTrack.appendChild(clone);
-        });
-
-        const animateReviews = () => {
-            if (!isPaused) {
-                scrollPos += 1;
-                // scrollWidth / 2 is the width of the original items
-                if (scrollPos >= reviewsTrack.scrollWidth / 2) {
-                    scrollPos = 0;
-                }
-                reviewsTrack.style.transform = `translateX(-${scrollPos}px)`;
-            }
-            requestAnimationFrame(animateReviews);
-        };
-        
-        requestAnimationFrame(animateReviews);
-        
-        reviewsTrack.addEventListener('mouseenter', () => isPaused = true);
-        reviewsTrack.addEventListener('mouseleave', () => isPaused = false);
-        
-        // Touch support for pause
-        reviewsTrack.addEventListener('touchstart', () => isPaused = true);
-        reviewsTrack.addEventListener('touchend', () => isPaused = false);
-    }
 });
