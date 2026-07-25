@@ -1492,7 +1492,29 @@ body.no-scroll {
     }
 
     .review-card {
-        padding: 25px;
+        min-width: 280px;
+        padding: 20px;
+    }
+
+    .review-cta {
+        padding: 25px 20px;
+        margin-top: 30px;
+    }
+
+    .review-cta h3 {
+        font-size: 20px;
+    }
+
+    .review-cta p {
+        font-size: 14px;
+    }
+
+    .review-cta-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
     }
 
     /* Relique section text card spacing */
