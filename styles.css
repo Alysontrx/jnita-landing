@@ -717,17 +717,44 @@ ul {
     position: relative;
     overflow: hidden;
     padding: 20px 0;
+    /* Add a radial gradient or fade mask for the sides */
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .reviews-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     width: 100%;
-    overflow: hidden;
 }
 
 .reviews-track {
     display: flex;
     gap: 30px;
-    transition: transform 0.5s ease-in-out;
+    width: max-content;
+}
+
+.reviews-track.scroll-left {
+    animation: scroll-horizontal 40s linear infinite;
+}
+
+.reviews-track.scroll-right {
+    animation: scroll-horizontal-reverse 40s linear infinite;
+}
+
+.reviews-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-horizontal {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-horizontal-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
 }
 
 .review-card {
@@ -756,6 +783,53 @@ ul {
     font-family: serif;
     line-height: 1;
     z-index: 0;
+}
+
+/* Call to Action for Reviews */
+.review-cta {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.review-cta h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--secondary-yellow);
+    margin-bottom: 15px;
+}
+
+.review-cta p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.review-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--white);
+    color: var(--primary-blue-dark);
+    padding: 15px 30px;
+    border-radius: var(--radius-full);
+    font-size: 16px;
+    font-weight: 700;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.review-cta-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: var(--secondary-yellow);
+    color: var(--primary-blue-dark);
 }
 
 .reviewer-info {
