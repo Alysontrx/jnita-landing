@@ -232,7 +232,7 @@ ul {
 .nav-links a {
     font-size: 13px;
     font-weight: 700;
-    color: var(--text-dark);
+    color: var(--secondary-yellow);
     text-transform: uppercase;
     letter-spacing: 0;
     display: inline-flex;
@@ -242,7 +242,7 @@ ul {
 }
 
 .nav-links a:hover {
-    color: var(--primary-blue);
+    color: var(--white);
     transform: translateY(-1px);
 }
 
