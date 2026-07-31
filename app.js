@@ -58,6 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('no-scroll');
     });
 
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (nav.classList.contains('mobile-open') && !nav.contains(e.target) && !menuBtn.contains(e.target)) {
+            nav.classList.remove('mobile-open');
+            menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            document.body.classList.remove('no-scroll');
+        }
+    });
+
     // Close menu when clicking a link
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {

@@ -5,31 +5,30 @@
     --secondary-yellow: #f9a826;
     --secondary-yellow-dark: #e09620;
 
-    /* Modern Slate Grays for text */
-    --text-dark: #1e293b;
-    --text-light: #64748b;
-    --bg-color: #f4f7fb;
-    --bg-alt: #ffffff;
+    /* Premium Dark Mode Slate */
+    --text-dark: #e2e8f0;
+    --text-light: #94a3b8;
+    --bg-color: #0f172a;
+    --bg-alt: #1e293b;
+    --surface-color: rgba(30, 41, 59, 0.7);
 
     --white: #ffffff;
-    --border-color: #e2e8f0;
+    --border-color: #334155;
 
     --success-green: #10b981;
     --danger-red: #ef4444;
 
     /* Soft, deep modern shadows */
-    --shadow-sm: 0 2px 4px rgba(0, 30, 60, 0.04);
-    --shadow-md: 0 10px 25px rgba(0, 30, 60, 0.08);
-    --shadow-lg: 0 20px 40px rgba(0, 30, 60, 0.12);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.6);
 
     /* Rounded corners */
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
     --radius-full: 9999px;
-
-    /* Smooth cubic-bezier transition */
-    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -81,7 +80,7 @@ ul {
 
 /* Header Styles */
 .header {
-    background-color: var(--white);
+    background-color: var(--surface-color);
     box-shadow: var(--shadow-sm);
     position: relative;
     z-index: 100;
@@ -113,7 +112,7 @@ ul {
 
 .header-main {
     padding: 20px 0;
-    background-color: var(--white);
+    background-color: var(--surface-color);
     color: var(--primary-blue);
 }
 
@@ -188,7 +187,7 @@ ul {
 }
 
 .action-btn:hover {
-    background: var(--white);
+    background: var(--surface-color);
     transform: translateY(-2px);
     border-color: var(--primary-blue);
 }
@@ -209,7 +208,7 @@ ul {
 }
 
 .header-nav {
-    background-color: var(--white);
+    background-color: var(--surface-color);
     border-bottom: 3px solid var(--secondary-yellow);
     box-shadow: var(--shadow-sm);
     /* Glassmorphism setup for sticky nav */
@@ -218,7 +217,7 @@ ul {
 
 /* When the nav becomes fixed via JS */
 .header-nav[style*="position: fixed"] {
-    background: rgba(255, 255, 255, 0.95) !important;
+    background: rgba(30, 41, 59, 0.95) !important;
     backdrop-filter: blur(10px);
 }
 
@@ -294,7 +293,7 @@ ul {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(15, 23, 42, 0.6);
     border: none;
     width: 45px;
     height: 45px;
@@ -311,7 +310,7 @@ ul {
 }
 
 .carousel-btn:hover {
-    background: var(--white);
+    background: var(--surface-color);
     color: var(--secondary-yellow-dark);
     transform: translateY(-50%) scale(1.1);
 }
@@ -469,7 +468,7 @@ ul {
 }
 
 .about-content {
-    background: var(--white);
+    background: var(--surface-color);
     padding: 50px;
     border-radius: var(--radius-lg);
     border-left: 6px solid var(--secondary-yellow);
@@ -519,7 +518,7 @@ ul {
     gap: 12px;
     font-weight: 600;
     font-size: 15px;
-    color: var(--primary-blue);
+    color: var(--secondary-yellow);
     background: var(--bg-color);
     padding: 12px 24px;
     border-radius: var(--radius-full);
@@ -570,7 +569,7 @@ ul {
 }
 
 .history-card {
-    background: var(--white);
+    background: var(--surface-color);
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 76, 151, 0.08);
@@ -645,7 +644,7 @@ ul {
 }
 
 .history-info h3 {
-    color: var(--primary-blue-dark);
+    color: var(--secondary-yellow);
     font-size: 22px;
     font-weight: 800;
     margin-bottom: 12px;
@@ -664,7 +663,7 @@ ul {
     gap: 8px;
     padding: 8px 18px;
     background: linear-gradient(135deg, rgba(0, 76, 151, 0.05), rgba(0, 76, 151, 0.1));
-    color: var(--primary-blue-dark);
+    color: var(--secondary-yellow);
     border-radius: var(--radius-full);
     font-size: 14px;
     font-weight: 700;
@@ -684,7 +683,7 @@ ul {
 }
 
 .category-card {
-    background: var(--white);
+    background: var(--surface-color);
     border-radius: var(--radius-md);
     padding: 35px 20px;
     text-align: center;
@@ -825,7 +824,7 @@ ul {
 }
 
 .review-card {
-    background: var(--white);
+    background: var(--surface-color);
     color: var(--text-dark);
     padding: 35px;
     border-radius: var(--radius-lg);
@@ -882,7 +881,7 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background: var(--white);
+    background: var(--surface-color);
     color: var(--primary-blue-dark);
     padding: 15px 30px;
     border-radius: var(--radius-full);
@@ -974,7 +973,7 @@ ul {
 .info-block {
     display: flex;
     gap: 20px;
-    background: var(--white);
+    background: var(--surface-color);
     padding: 25px;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
@@ -1001,7 +1000,7 @@ ul {
 .info-block h3 {
     font-size: 18px;
     margin-bottom: 8px;
-    color: var(--text-dark);
+    color: var(--secondary-yellow);
 }
 
 .info-block p {
@@ -1012,11 +1011,11 @@ ul {
 
 .map-placeholder {
     width: 100%;
-    min-height: 400px;
+    height: 400px;
     border-radius: var(--radius-md);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
-    border: 4px solid var(--white);
+    border: 4px solid var(--border-color);
 }
 
 /* Footer Section */
@@ -1159,7 +1158,7 @@ ul {
     right: -10px;
     width: 28px;
     height: 28px;
-    background: var(--white);
+    background: var(--surface-color);
     border: 2px solid #25d366;
     color: #25d366;
     border-radius: 50%;
@@ -1207,7 +1206,7 @@ ul {
 /* === Reliquia Section === */
 .reliquia-section {
     padding: 100px 0;
-    background-color: var(--white);
+    background-color: var(--surface-color);
     border-top: 1px solid var(--border-color);
 }
 
@@ -1266,7 +1265,7 @@ ul {
 
 .reliquia-card-content h3 {
     font-size: 32px;
-    color: var(--primary-blue);
+    color: var(--secondary-yellow);
     margin-bottom: 20px;
     font-weight: 800;
 }
@@ -1418,7 +1417,7 @@ body.no-scroll {
         width: 80%;
         max-width: 320px;
         height: 100vh;
-        background: var(--white);
+        background: var(--surface-color);
         z-index: 1000;
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
         transition: var(--transition);
@@ -1641,4 +1640,63 @@ body.no-scroll {
         right: 25px;
         font-size: 28px;
     }
+}
+
+/* MOBILE RESPONSIVENESS AND MENU SWIPE FIXES */
+@media (max-width: 768px) {
+    .search-bar {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+    .search-bar input {
+        min-width: 0 !important;
+        padding: 10px !important;
+        font-size: 13px !important;
+    }
+    .search-bar button {
+        padding: 0 15px !important;
+    }
+    .header-main-container {
+        max-width: 100vw !important;
+        overflow: hidden !important;
+    }
+    
+    .header-nav {
+        right: 0 !important;
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .header-nav.mobile-open {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+    body {
+        background-attachment: scroll !important;
+    }
+}
+
+.top-bg-wrapper {
+    background: url("assets/fundo-loja.jpg.jpg") center/cover no-repeat;
+    position: relative;
+}
+.top-bg-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15, 23, 42, 0.4);
+    z-index: 1;
+}
+.top-bg-wrapper > section {
+    position: relative;
+    z-index: 2;
+}
+
+.map-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
 }

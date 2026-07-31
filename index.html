@@ -16,7 +16,7 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=35">
     <!-- Vercel Analytics -->
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -42,13 +42,13 @@
         <div class="header-main">
             <div class="container header-main-container">
                 <!-- Logo -->
-                <a class='logo-link' href='/'>
-                    <img src="assets/logo.jpg" alt="Jnita Auto Peças" class="logo-img" id="logo-img"
-                        onerror="this.onerror=null; this.src='https://placehold.co/200x80/004c97/ffffff?text=Jnita+Auto+Peças';">
+                <a href="/" class="logo-link">
+                    <img src="assets/logo.png?v=3" alt="Jnita Autopeças" class="logo-img"
+                        onerror="this.onerror=null; this.src='https://placehold.co/200x80/ffffff/004c97?text=Jnita+Auto+Peças';">
                 </a>
 
                 <div class="search-bar">
-                    <input type="text" id="search-input" placeholder="O que você procura? Ex:Nome da peça,veiculo">
+                    <input type="text" id="search-input" placeholder="O que você procura?">
                     <button type="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
 
@@ -67,7 +67,6 @@
                 <ul class="nav-links">
                     <li><a href="#about"><i class="fa-solid fa-store"></i> Quem Somos</a></li>
                     <li><a href="#history"><i class="fa-solid fa-clock-rotate-left"></i> Nossa História</a></li>
-                    <li><a href="#categories">Departamentos</a></li>
                     <li><a href="#testimonials">Avaliações</a></li>
                     <li><a href="#location">Nossa Localização</a></li>
                     <li><a href="https://wa.me/5511981868182?text=quero%20fazer%20um%20or%C3%A7amento!" target="_blank"
@@ -81,49 +80,53 @@
     <div class="slide-content">
         <button class="close-hero-slide" title="Fechar">&times;</button>
         <h2>Precisando de peças com urgência?</h2>
-        <p>Conte com nossa equipe para um atendimento VIP e imediato. Amplo estoque nacional e importado com a qualidade que seu veículo merece.</p>
-        <a href="https://wa.me/5511981868182" class="slide-btn cta-pulse" target="_blank"><i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i> FAZER COTAÇÃO AGORA</a>
+        <p>Conte com nossa equipe para um atendimento VIP e imediato. Amplo estoque nacional e importado com a qualidade
+            que seu veículo merece.</p>
+        <a href="https://wa.me/5511981868182" class="slide-btn" target="_blank"><i class="fa-brands fa-whatsapp"
+                style="font-size: 18px;"></i> FAZER COTAÇÃO AGORA</a>
     </div>
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Carousel Section -->
-        <section class="hero-section">
-            <div class="container">
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <div class="hero-slide active">
-                            <img src="assets/banner.jpg" alt="Banner Jnita Autopeças" class="banner-img"
-                                onerror="this.onerror=null; this.src='https://placehold.co/1200x400/f9a826/004c97?text=Banner+Jnita+Auto+Peças';">
+        <div class="top-bg-wrapper">
+            <!-- Hero Carousel Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="hero-slide active">
+                                <img src="assets/banner.png.png" alt="Banner Jnita Autopeças" class="banner-img"
+                                    onerror="this.onerror=null; this.src='https://placehold.co/1200x400/f9a826/004c97?text=Banner+Jnita+Auto+Peças';">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2 class="section-title">Nossa <span>Loja</span></h2>
-                        <p class="about-description">
-                            <strong>"Na Jnita Auto Peças você tem agilidade e qualidade na hora de sua compra, com
-                                a certeza das melhores marcas do mercado; Venha conferir! Venda de Peças Automotivas em
-                                Geral, Nacionais e Importadas em Guarulhos."</strong>
-                        </p>
-                        <ul class="about-features">
-                            <li><i class="fa-solid fa-check"></i> Peças Nacionais e Importadas</li>
-                            <li><i class="fa-solid fa-check"></i> Grande Variedade em Geral</li>
-                            <li><i class="fa-solid fa-check"></i> Atendimento de Confiança</li>
-                            <li><i class="fa-solid fa-check"></i> Equipe de Especialistas</li>
-                            <li><i class="fa-solid fa-check"></i> Preço Justo e Competitivo</li>
-                            <li><i class="fa-solid fa-check"></i> Agilidade na Entrega</li>
-                        </ul>
+            <!-- About Us Section -->
+            <section id="about" class="about-section">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h2 class="section-title">Nossa <span>Loja</span></h2>
+                            <p class="about-description">
+                                <strong>"Na Jnita Auto Peças você tem agilidade e qualidade na hora de sua compra, com
+                                    a certeza das melhores marcas do mercado; Venha conferir! Venda de Peças Automotivas em
+                                    Geral, Nacionais e Importadas em Guarulhos."</strong>
+                            </p>
+                            <ul class="about-features">
+                                <li><i class="fa-solid fa-check"></i> Peças Nacionais e Importadas</li>
+                                <li><i class="fa-solid fa-check"></i> Grande Variedade em Geral</li>
+                                <li><i class="fa-solid fa-check"></i> Atendimento de Confiança</li>
+                                <li><i class="fa-solid fa-check"></i> Equipe de Especialistas</li>
+                                <li><i class="fa-solid fa-check"></i> Preço Justo e Competitivo</li>
+                                <li><i class="fa-solid fa-check"></i> Agilidade na Entrega</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- Our History Section -->
         <section id="history" class="history-section">
@@ -132,7 +135,7 @@
                     <h2 class="section-title">História <span>Jnita</span></h2>
                     <p class="history-description">
                         <strong>Trabalhamos com dedicação desde a nossa fundação. Conheça a evolução de
-                        nossas instalações e os símbolos que marcaram nossa trajetória!</strong>
+                            nossas instalações e os símbolos que marcaram nossa trajetória!</strong>
                     </p>
                 </div>
                 <div class="history-grid">
@@ -153,8 +156,7 @@
                     <!-- Evolution Phase 2 -->
                     <div class="history-card">
                         <div class="history-img-wrapper">
-                            <img src="assets/fachada2.jpg.jpeg" alt="Evolução e Expansão"
-                                class="history-img"
+                            <img src="assets/fachada2.jpg.jpeg" alt="Evolução e Expansão" class="history-img"
                                 onerror="this.onerror=null; this.src='https://placehold.co/400x400/f4f7fb/004c97?text=Nova+Sede';">
                         </div>
                         <div class="history-info">
@@ -208,24 +210,33 @@
                                     <div class="avatar">BC</div>
                                     <h4>Bruh Carolli</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Achei barato as peças e adorei o atendimento personalizado. Recomendo!"</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Achei barato as peças e adorei o atendimento personalizado.
+                                    Recomendo!"</p>
                             </div>
                             <div class="review-card">
                                 <div class="reviewer-info">
                                     <div class="avatar">FS</div>
                                     <h4>Fernando Santos</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Atendimento nota 1000, super atencioso e sem pressa, preços bons, mereceu a avaliação !!!"</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Atendimento nota 1000, super atencioso e sem pressa, preços
+                                    bons, mereceu a avaliação !!!"</p>
                             </div>
                             <div class="review-card">
                                 <div class="reviewer-info">
                                     <div class="avatar">ML</div>
                                     <h4>Mandy Llomp</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Sempre ajudando! Salvaram demais!! Preço na média do mercado, sempre vejo antes no Jnita."</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Sempre ajudando! Salvaram demais!! Preço na média do mercado,
+                                    sempre vejo antes no Jnita."</p>
                             </div>
                             <!-- Track 1 - Duplicated for infinite CSS scroll -->
                             <div class="review-card" aria-hidden="true">
@@ -233,24 +244,33 @@
                                     <div class="avatar">BC</div>
                                     <h4>Bruh Carolli</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Achei barato as peças e adorei o atendimento personalizado. Recomendo!"</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Achei barato as peças e adorei o atendimento personalizado.
+                                    Recomendo!"</p>
                             </div>
                             <div class="review-card" aria-hidden="true">
                                 <div class="reviewer-info">
                                     <div class="avatar">FS</div>
                                     <h4>Fernando Santos</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Atendimento nota 1000, super atencioso e sem pressa, preços bons, mereceu a avaliação !!!"</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Atendimento nota 1000, super atencioso e sem pressa, preços
+                                    bons, mereceu a avaliação !!!"</p>
                             </div>
                             <div class="review-card" aria-hidden="true">
                                 <div class="reviewer-info">
                                     <div class="avatar">ML</div>
                                     <h4>Mandy Llomp</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Sempre ajudando! Salvaram demais!! Preço na média do mercado, sempre vejo antes no Jnita."</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Sempre ajudando! Salvaram demais!! Preço na média do mercado,
+                                    sempre vejo antes no Jnita."</p>
                             </div>
                         </div>
 
@@ -261,24 +281,33 @@
                                     <div class="avatar">HC</div>
                                     <h4>Higor Caetano</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Uma das melhores lojas para comprar peças, atendentes especialistas, ajudam na dúvida. Indico!"</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Uma das melhores lojas para comprar peças, atendentes
+                                    especialistas, ajudam na dúvida. Indico!"</p>
                             </div>
                             <div class="review-card">
                                 <div class="reviewer-info">
                                     <div class="avatar">ES</div>
                                     <h4>Eduardo Salazar</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Super atenciosos, achei as peças que precisei, a preço justo...👍🏼😉"</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Super atenciosos, achei as peças que precisei, a preço
+                                    justo...👍🏼😉"</p>
                             </div>
                             <div class="review-card">
                                 <div class="reviewer-info">
                                     <div class="avatar">RR</div>
                                     <h4>Rosangela Santos</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Ótimo atendimento... Os preços são bons, os vendedores atenciosos explicam e ensinam..."</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Ótimo atendimento... Os preços são bons, os vendedores
+                                    atenciosos explicam e ensinam..."</p>
                             </div>
                             <!-- Track 2 - Duplicated for infinite CSS scroll -->
                             <div class="review-card" aria-hidden="true">
@@ -286,24 +315,33 @@
                                     <div class="avatar">HC</div>
                                     <h4>Higor Caetano</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Uma das melhores lojas para comprar peças, atendentes especialistas, ajudam na dúvida. Indico!"</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Uma das melhores lojas para comprar peças, atendentes
+                                    especialistas, ajudam na dúvida. Indico!"</p>
                             </div>
                             <div class="review-card" aria-hidden="true">
                                 <div class="reviewer-info">
                                     <div class="avatar">ES</div>
                                     <h4>Eduardo Salazar</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Super atenciosos, achei as peças que precisei, a preço justo...👍🏼😉"</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Super atenciosos, achei as peças que precisei, a preço
+                                    justo...👍🏼😉"</p>
                             </div>
                             <div class="review-card" aria-hidden="true">
                                 <div class="reviewer-info">
                                     <div class="avatar">RR</div>
                                     <h4>Rosangela Santos</h4>
                                 </div>
-                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                <p class="review-text">"Ótimo atendimento... Os preços são bons, os vendedores atenciosos explicam e ensinam..."</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Ótimo atendimento... Os preços são bons, os vendedores
+                                    atenciosos explicam e ensinam..."</p>
                             </div>
                         </div>
                     </div>
@@ -311,13 +349,23 @@
 
                 <div class="review-cta">
                     <h3>Sua experiência é a engrenagem que nos move!</h3>
-                    <p>Cada avaliação é um combustível essencial para continuarmos entregando o melhor atendimento, dedicação e as melhores peças para o seu veículo. Adoraríamos ouvir a sua voz.</p>
+                    <p>Cada avaliação é um combustível essencial para continuarmos entregando o melhor atendimento,
+                        dedicação e as melhores peças para o seu veículo. Adoraríamos ouvir a sua voz.</p>
                     <a href="https://g.page/r/CUSH4lEiAjDZEBM/review" target="_blank" class="review-cta-btn">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px">
-                            <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
-                            <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
-                            <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
-                            <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px"
+                            height="24px">
+                            <path fill="#EA4335"
+                                d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z">
+                            </path>
+                            <path fill="#4285F4"
+                                d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z">
+                            </path>
+                            <path fill="#FBBC05"
+                                d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z">
+                            </path>
+                            <path fill="#34A853"
+                                d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z">
+                            </path>
                         </svg>
                         Deixe sua Avaliação no Google
                     </a>
@@ -330,7 +378,8 @@
             <div class="container">
                 <div class="reliquia-grid">
                     <div class="reliquia-img-container">
-                        <img src="assets/chevette-1985-removed-plate.png" alt="Chevette 1985 Bege Jnita" class="reliquia-img">
+                        <img src="assets/chevette-1985-removed-plate.png" alt="Chevette 1985 Bege Jnita"
+                            class="reliquia-img">
                         <div class="reliquia-badge">Símbolo Jnita</div>
                     </div>
                     <div class="reliquia-text">
@@ -402,7 +451,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col about-col">
-                    <img src="assets/logo.jpg" alt="Jnita Auto Peças" class="footer-logo"
+                    <img src="assets/logo.png?v=3" alt="Jnita Auto Peças" class="footer-logo"
                         onerror="this.onerror=null; this.src='https://placehold.co/150x60/ffffff/004c97?text=Jnita';">
                     <p>Agilidade e qualidade na hora da sua compra, com certeza das melhores marcas do mercado!</p>
                     <div class="social-links">
@@ -414,7 +463,6 @@
                     <h4>Navegação</h4>
                     <ul>
                         <li><a href="#about">Quem Somos</a></li>
-                        <li><a href="#categories">Departamentos</a></li>
                         <li><a href="#testimonials">Avaliações (4,5 ⭐)</a></li>
                         <li><a href="#location">Localização</a></li>
                     </ul>
@@ -451,7 +499,8 @@
         </a>
     </div>
 
-    <script src="app.js"></script>
+    <!-- Custom JS -->
+    <script src="app.js?v=8"></script>
 </body>
 
 </html>
